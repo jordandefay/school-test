@@ -33,7 +33,7 @@ services:
   app:
     build: .
     environment:
-      DATABASE_URL: "postgresql://myuser:mypassword@db:5432/mydb"
+      DATABASE_URL: "postgresql://user:password@db:5432/mydb"
     depends_on:
       - db
     command: npm start
@@ -48,7 +48,7 @@ services:
       - db
     command: npx prisma migrate dev --name init
     environment:
-      DATABASE_URL: "postgresql://myuser:mypassword@db:5432/mydb"
+      DATABASE_URL: "postgresql://user:password@db:5432/mydb"
 
 
 ## Learn More
