@@ -2,25 +2,25 @@
 
 ## Getting Started
 
-First, run the development server:
+- Install the last version of node
+- Install Docker Engine
+- Install gh : “sudo apt install gh”
+- Connect to GitHub account
+- Clone the repo : “gh repo clone jordandefay/school-test”
+- Add .env and modif docker-compose
+- Generate Prisma’s client with this command : “npx prisma generate”
+- You’d then do :
+    - docker compose build
+    - docker compose up -d db
+    - docker compose run —rm migrate
+    - docker compose up -d app
+- Then the VPS is ready to use
+  
+Open [http://IP SERVER:3000] with your browser to see the result.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Learn More
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-## Learn Moree
-
-To learn more about Next.js, take a look at the following resources:
+Take a look at the following resources:
 
 - https://chamalhat.com/jordan-defay/index.html
 - https://www.linkedin.com/in/jordan-defay-python-dev/
